@@ -7,7 +7,7 @@ async function read_data() {
         console.log(e)
     }
     xml.onload = setup_questions
-    xml.open("GET", "/q_data.txt");
+    xml.open("GET", "https://github.com/TheBigKahuna353/Lockdown_Quiz/blob/main/q_data.txt");
     xml.send();
     
 }

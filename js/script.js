@@ -22,7 +22,8 @@ function setup_questions(e) {
         document.body.appendChild(div);
         div.textContent = "Question " + (i+1).toString()
         div.id = 'question'
-        q_data_div = div.createElement('div')
+        q_data_div = document.createElement('div')
+        div.appendChild(q_data_div)
         q_data_div.textContent = contents[i]
         q_data_div.id = 'question_data'
     }
